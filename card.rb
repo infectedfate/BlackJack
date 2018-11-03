@@ -1,5 +1,4 @@
 class Card
-
   attr_reader :suit, :value
 
   SUITS = ['+', '<>', '<3', '^'].freeze
@@ -12,5 +11,7 @@ class Card
   end
 
   def validate!
+    raise 'Неверное значение' if
+    raise 'Неверное количество' if
   end
 end
