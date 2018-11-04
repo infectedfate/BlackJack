@@ -10,11 +10,11 @@ class Player
   end
 
   def take
-    
+    deck.get
   end
 
-  def pass
-    
+  def take_start_cards
+    deck.get(2)
   end
 
   def return_cards
@@ -23,5 +23,13 @@ class Player
 
   def player_cards
     @cards.map { |card| "#{card.value}#{card.suit}" }
+  end
+
+  def card_sum
+    
+  end
+
+  def calculate
+    
   end
 end
