@@ -10,6 +10,10 @@ class Card
     #validate!
   end
 
+  def ace?
+    @value = 'A'
+  end
+
 #  def validate!
 #    raise 'Неверное значение' if
 #    raise 'Неверное количество' if
