@@ -1,6 +1,7 @@
 module Interface
 
   MENU = {
+    1 => ''
   }.freeze
 
   def run

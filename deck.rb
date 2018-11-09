@@ -17,7 +17,7 @@ class Deck
     deck.shuffle
   end
 
-  def get(quantity = 1)
+  def get_card(quantity = 1)
     @deck.shift(quantity)
   end
 end

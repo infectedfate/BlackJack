@@ -1,16 +1,27 @@
-require_relative 'card'
 require_relative 'deck'
 
 class Player
   attr_accessor :name, :cash, :cards
 
   def initialize(name)
-    @name = name
-    @cash = 0
+    @name = name.capitalize
+    @cash = 100
+  end
+
+  def give_cash(value)
+    @cash += value
+  end
+
+  def take_cash(value)
+    @cash -= value
+  end
+
+  def do_bet
+    @cash -= 10
   end
 
   def take
-    deck.get
+    deck.get_card
   end
 
   def take_start_cards
@@ -23,13 +34,5 @@ class Player
 
   def player_cards
     @cards.map { |card| "#{card.value}#{card.suit}" }
-  end
-
-  def card_sum
-    
-  end
-
-  def calculate
-    
   end
 end

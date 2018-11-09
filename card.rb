@@ -1,7 +1,7 @@
 class Card
   attr_reader :suit, :value
 
-  SUITS = ['+', '<>', '<3', '^'].freeze
+  SUITS = %w[♠ ♦ ♥ ♣].freeze
   VALUES = [2, 3, 4, 5, 6, 7, 8, 9, 10, 'J', 'Q', 'K', 'A'].freeze
 
   def initialize(suit, value)
@@ -14,4 +14,5 @@ class Card
     raise 'Неверное значение' if
     raise 'Неверное количество' if
   end
+  
 end

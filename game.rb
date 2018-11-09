@@ -6,4 +6,8 @@ class Game
     @player = Player.new
     @deck = Deck.new
   end
+
+  def run
+    
+  end
 end
