@@ -20,7 +20,7 @@ class Player
     @cash -= 10
   end
 
-  def take
+  def take_card
     deck.get_card
   end
 

@@ -1,7 +1,9 @@
 module Interface
 
   MENU = {
-    1 => ''
+    1 => 'pass'
+    2 => 'player.take_card'
+    3 => 'open_cards'
   }.freeze
 
   def run
@@ -14,6 +16,9 @@ module Interface
   end
 
   def info
+    puts '1. Пропусить ход'
+    puts '2. Взять карту'
+    puts '3. Открыть карты'
   end
 
   def command(cmd)
