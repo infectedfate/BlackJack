@@ -17,7 +17,7 @@ class Interface
     puts "Dealer have a cards: #{dealer_cards}"
     puts 'Enter 1, if you want open cadrs'
     puts 'Enter 2, if you want pass the turn'
-    puts 'Enterq 3, if you want add the card' if add_card
+    puts 'Enter 3, if you want add the card' if add_card
     gets.chomp.to_i
   end
 
