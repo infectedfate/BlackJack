@@ -33,9 +33,9 @@ class Interface
     when :draw
       puts 'Its draw.'
     when :user
-      puts "Winner is #{user_name}"
+      puts 'Winner is player'
     when :dealer
-      puts "Winner is #{dealer_name}"
+      puts 'Winner is dealer'
     end
   end
 
