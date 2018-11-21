@@ -1,13 +1,11 @@
 require_relative 'player'
 
 class Dealer < Player
-  NAME = 'Dealer'.freeze
-
-  def initialize
-    super(NAME)
+  def take_card?
+    card_sum < 17 && cards.size == 2
   end
 
-  def turn?
-    score < 17
+  def hide_cards
+    cards.map { '*' }.join(' ')
   end
 end

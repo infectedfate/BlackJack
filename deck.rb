@@ -20,4 +20,8 @@ class Deck
   def get_card(quantity = 1)
     @deck.shift(quantity)
   end
+
+  def get_start_cards
+    get_card(2)
+  end
 end
