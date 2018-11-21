@@ -29,7 +29,7 @@ class Player
   def card_sum
     values = assign_values
     values.each do |value|
-      if values[0] + values[1] < 21 && value == 1
+      if values.sum < 21 && value == 1
         values[values.index(value)] = 11 if values.sum + 10 < 22
       end
     end
