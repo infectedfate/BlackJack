@@ -10,6 +10,7 @@ class Player
     @name = name
     @bank = 0
     @hand = Hand.new
+    @bank = Bank.new
   end
 
   def take_card(cards)
