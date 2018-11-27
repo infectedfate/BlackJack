@@ -10,7 +10,7 @@ class Game
   def initialize
     @interface = Interface.new
     @user = Player.new(@interface.get_user_name)
-    @dealer = Dealer.new("Dealer")
+    @dealer = Dealer.new('Dealer')
     @user.bank = Bank.new(@user)
     @dealer.bank = Bank.new(@dealer)
     @interface.welcome_message
