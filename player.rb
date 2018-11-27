@@ -8,6 +8,7 @@ class Player
   def initialize(name)
     @name = name
     @bank = 0
+    @hand = Hand.new
   end
 
   def take_card(cards)

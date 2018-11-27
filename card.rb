@@ -7,9 +7,11 @@ class Card
   def initialize(suit, value)
     @suit = suit
     @value = value
+    validate_card
   end
 
-  def ace?
-    @value = 'A'
+  def validate_card
+    raise 'No valid value' unless VALUE.include?(@value)
+    raise 'No valid suit' unless SUIT.include?(@suit)
   end
 end

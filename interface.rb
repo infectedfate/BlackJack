@@ -26,7 +26,7 @@ class Interface
     puts "Dealer cards: #{dealer_cards}, summary: #{dealer_sum}\n"
   end
 
-  def show_game_result(winner, user_name, dealer_name)
+  def show_game_result(winner)
     case winner
     when :nobody
       puts 'Both of players scored 21. 10$ is not return.'
