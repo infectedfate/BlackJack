@@ -74,7 +74,7 @@ class Game
 
   def open_cards
     @interface.show_cards(@user.player_cards, @user.card_sum, @dealer.player_cards, @dealer.card_sum)
-    @interface.show_game_result(winner, @user.name, @dealer.name)
+    @interface.show_game_result(winner)
     case winner
     when :draw
       return_money(@user, @dealer)
