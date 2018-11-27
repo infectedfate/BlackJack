@@ -11,7 +11,7 @@ class Card
   end
 
   def validate_card
-    raise 'No valid value' unless VALUE.include?(@value)
-    raise 'No valid suit' unless SUIT.include?(@suit)
+    raise 'No valid value' unless VALUES.include?(@value)
+    raise 'No valid suit' unless SUITS.include?(@suit)
   end
 end
