@@ -20,7 +20,7 @@ class Game
   def new_game
     loop do
       @deck = Deck.new
-      if @user.cards
+      if @user.hand.cards
         @user.return_cards
         @dealer.return_cards
       end
@@ -69,7 +69,7 @@ class Game
   end
 
   def check_cards_count
-    @dealer.cards.size == 3 && @user.cards.size == 3
+    @dealer.hand.cards.size == 3 && @user.hand.cards.size == 3
   end
 
   def open_cards

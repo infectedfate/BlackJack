@@ -4,7 +4,7 @@ require_relative 'hand'
 
 class Player
   attr_reader :name
-  attr_accessor :bank, :cards
+  attr_accessor :bank, :cards, :hand
 
   def initialize(name)
     @name = name
@@ -13,7 +13,7 @@ class Player
   end
 
   def take_card(cards)
-    if @cards
+    if @hand.cards
       @hand.cards += cards
     else
       @hand.cards = cards
